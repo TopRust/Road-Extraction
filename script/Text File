@@ -1,0 +1,27 @@
+
+    # h_lim  = predict.shape[1]
+    # w_lim  = predict.shape[0]
+    # predict_data = predict.flatten()
+    # label_data = label.flatten()
+
+    # true_positive = 0
+    # for y in range(h_lim):
+    #     for x in range(w_lim):
+
+    #         pred_val = predict_data[y * w_lim + x]
+
+    #         if (pred_val == 1):
+    #             st_y = max(0, y -relax)
+    #             en_y = min(y + relax, h_lim - 1)
+    #             st_x = max(0, x -relax)
+    #             en_x = min(x + relax, w_lim - 1)
+    #             sum = 0
+
+    #             for yy in range(st_y, en_y, 1):
+    #                 for xx in range(st_x, en_x, 1):
+    #                     sum += label_data[yy * w_lim + xx]
+
+    #             if (sum > 0):
+    #                 true_positive += 1
+
+    # return true_positive   
